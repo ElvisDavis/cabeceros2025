@@ -26,7 +26,7 @@ public class ProductoXlsServlet extends HttpServlet {
         boolean esXls=servletPath.endsWith(".xls");
         if (esXls){
             resp.setContentType("application/vnd.ms-excel");
-            resp.setHeader("Content-Disposition", "attachment; filename=productos.xls");
+             resp.setHeader("Content-Disposition", "attachment; filename=productos.xls");
         }
         try (PrintWriter out = resp.getWriter()) {
             if (!esXls) {

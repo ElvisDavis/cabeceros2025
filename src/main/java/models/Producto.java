@@ -20,6 +20,7 @@ public class Producto {
     public Long getId() {
         return id;
     }
+    ///id= 3 tengo acceso al 3
 
     public void setId(Long id) {
         this.id = id;
